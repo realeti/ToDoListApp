@@ -3,7 +3,7 @@
 xcuserdata/
 
 ## Ignore GoogleService plist
-Other/GoogleService-Info.plist
+**/GoogleService-Info.plist
 
 ## Obj-C/Swift specific
 *.hmap
