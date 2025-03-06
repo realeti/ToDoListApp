@@ -30,6 +30,7 @@
 		C64DAAC82D78DB08004E859F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64DAAC72D78DB08004E859F /* RegisterViewModel.swift */; };
 		C64DAACA2D78DB10004E859F /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64DAAC92D78DB10004E859F /* ToDoListItemViewModel.swift */; };
 		C64DAAD12D78E835004E859F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64DAAD02D78E835004E859F /* HeaderView.swift */; };
+		C6655CCF2D7A31B700D458C9 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6655CCE2D7A31B700D458C9 /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		C64DAAC72D78DB08004E859F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		C64DAAC92D78DB10004E859F /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
 		C64DAAD02D78E835004E859F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C6655CCE2D7A31B700D458C9 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +130,15 @@
 		C64DAA9D2D78D76B004E859F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C64DAACF2D78E825004E859F /* Login */,
 				C64DAA9F2D78D76B004E859F /* MainView.swift */,
+				C64DAAB32D78D9D4004E859F /* LoginView.swift */,
+				C64DAAD02D78E835004E859F /* HeaderView.swift */,
 				C64DAAAD2D78D9AB004E859F /* ProfileView.swift */,
 				C64DAAAF2D78D9C3004E859F /* ToDoListView.swift */,
 				C64DAAB12D78D9CC004E859F /* NewItemView.swift */,
 				C64DAAB52D78D9DC004E859F /* RegisterView.swift */,
 				C64DAAB72D78DA07004E859F /* ToDoListItemView.swift */,
+				C6655CCE2D7A31B700D458C9 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,15 +171,6 @@
 				C64DAA9E2D78D76B004E859F /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		C64DAACF2D78E825004E859F /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				C64DAAB32D78D9D4004E859F /* LoginView.swift */,
-				C64DAAD02D78E835004E859F /* HeaderView.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +259,7 @@
 				C64DAAC82D78DB08004E859F /* RegisterViewModel.swift in Sources */,
 				C64DAAB02D78D9C3004E859F /* ToDoListView.swift in Sources */,
 				C64DAAB62D78D9DC004E859F /* RegisterView.swift in Sources */,
+				C6655CCF2D7A31B700D458C9 /* TLButton.swift in Sources */,
 				C64DAAC02D78DAC2004E859F /* ProfileViewModel.swift in Sources */,
 				C64DAAAE2D78D9AB004E859F /* ProfileView.swift in Sources */,
 				C64DAABA2D78DA7F004E859F /* User.swift in Sources */,

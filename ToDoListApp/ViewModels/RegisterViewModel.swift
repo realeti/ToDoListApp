@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+@Observable
+class RegisterViewModel {
+    var name = ""
+    var email = ""
+    var password = ""
+    
+    init() {}
+    
+    func createAccount() {
+        
+    }
+}
