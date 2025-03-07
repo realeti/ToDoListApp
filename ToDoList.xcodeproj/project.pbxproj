@@ -31,6 +31,7 @@
 		C64DAACA2D78DB10004E859F /* ToDoListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64DAAC92D78DB10004E859F /* ToDoListItemViewModel.swift */; };
 		C64DAAD12D78E835004E859F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64DAAD02D78E835004E859F /* HeaderView.swift */; };
 		C6655CCF2D7A31B700D458C9 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6655CCE2D7A31B700D458C9 /* TLButton.swift */; };
+		C68257A22D7B85C100C7DDC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68257A12D7B85C100C7DDC3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		C64DAAC92D78DB10004E859F /* ToDoListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewModel.swift; sourceTree = "<group>"; };
 		C64DAAD02D78E835004E859F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C6655CCE2D7A31B700D458C9 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		C68257A12D7B85C100C7DDC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				C64DAAAA2D78D7DC004E859F /* App */,
+				C68257A02D7B85B400C7DDC3 /* Helpers */,
 				C64DAA992D78D76B004E859F /* Other */,
 				C64DAA982D78D76B004E859F /* Models */,
 				C64DAA9D2D78D76B004E859F /* Views */,
@@ -171,6 +174,14 @@
 				C64DAA9E2D78D76B004E859F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C68257A02D7B85B400C7DDC3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C68257A12D7B85C100C7DDC3 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				C64DAAC62D78DB02004E859F /* LoginViewModel.swift in Sources */,
 				C64DAAC42D78DAFC004E859F /* NewItemViewModel.swift in Sources */,
 				C64DAAB82D78DA07004E859F /* ToDoListItemView.swift in Sources */,
+				C68257A22D7B85C100C7DDC3 /* Extensions.swift in Sources */,
 				C64DAAAB2D78D7DC004E859F /* ToDoListApp.swift in Sources */,
 				C64DAAC22D78DAE2004E859F /* ToDoListViewModel.swift in Sources */,
 				C64DAABC2D78DA87004E859F /* ToDoListItem.swift in Sources */,

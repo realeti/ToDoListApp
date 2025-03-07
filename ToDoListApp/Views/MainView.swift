@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct MainView: View {
+    @Environment(MainViewModel.self) var viewModel
+    
     var body: some View {
-        LoginView()
-            .environment(LoginViewModel())
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
+            ToDoListView()
+        } else {
+            LoginView()
+                .environment(LoginViewModel())
+        }
     }
 }
 
 #Preview {
     MainView()
+        .environment(MainViewModel())
 }
