@@ -11,4 +11,8 @@ import Foundation
 @Observable
 class ToDoListItemViewModel {
     init() {}
+    
+    func toggleIsDone(_ item: ToDoListItem) {
+        print("toggleIsDone")
+    }
 }

@@ -14,4 +14,8 @@ class ToDoListViewModel {
     var showingNewItemView: Bool = false
     
     init() {}
+    
+    func delete(id: String) {
+        
+    }
 }
