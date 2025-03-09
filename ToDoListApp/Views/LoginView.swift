@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @Environment(LoginViewModel.self) var viewModel
+    @State private var registerViewModel = RegisterViewModel()
     
     var body: some View {
         @Bindable var viewModel = viewModel
@@ -55,7 +56,7 @@ struct LoginView: View {
                     
                     NavigationLink("Create An Account") {
                         RegisterView()
-                            .environment(RegisterViewModel())
+                            .environment(registerViewModel)
                     }
                 }
                 .padding(.bottom, 50)

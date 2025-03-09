@@ -32,6 +32,7 @@
 		C64DAAD12D78E835004E859F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64DAAD02D78E835004E859F /* HeaderView.swift */; };
 		C6655CCF2D7A31B700D458C9 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6655CCE2D7A31B700D458C9 /* TLButton.swift */; };
 		C68257A22D7B85C100C7DDC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68257A12D7B85C100C7DDC3 /* Extensions.swift */; };
+		C6ECFD412D7DFBAD0000D3E2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6ECFD402D7DFBAD0000D3E2 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		C64DAAD02D78E835004E859F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C6655CCE2D7A31B700D458C9 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		C68257A12D7B85C100C7DDC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6ECFD402D7DFBAD0000D3E2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +123,10 @@
 				C64DAABD2D78DAAD004E859F /* MainViewModel.swift */,
 				C64DAABF2D78DAC2004E859F /* ProfileViewModel.swift */,
 				C64DAAC12D78DAE2004E859F /* ToDoListViewModel.swift */,
+				C64DAAC92D78DB10004E859F /* ToDoListItemViewModel.swift */,
 				C64DAAC32D78DAFC004E859F /* NewItemViewModel.swift */,
 				C64DAAC52D78DB02004E859F /* LoginViewModel.swift */,
 				C64DAAC72D78DB08004E859F /* RegisterViewModel.swift */,
-				C64DAAC92D78DB10004E859F /* ToDoListItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -137,9 +139,9 @@
 				C64DAAD02D78E835004E859F /* HeaderView.swift */,
 				C64DAAAD2D78D9AB004E859F /* ProfileView.swift */,
 				C64DAAAF2D78D9C3004E859F /* ToDoListView.swift */,
+				C64DAAB72D78DA07004E859F /* ToDoListItemView.swift */,
 				C64DAAB12D78D9CC004E859F /* NewItemView.swift */,
 				C64DAAB52D78D9DC004E859F /* RegisterView.swift */,
-				C64DAAB72D78DA07004E859F /* ToDoListItemView.swift */,
 				C6655CCE2D7A31B700D458C9 /* TLButton.swift */,
 			);
 			path = Views;
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				C64DAA9E2D78D76B004E859F /* Assets.xcassets */,
+				C6ECFD402D7DFBAD0000D3E2 /* Launch Screen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				C64DAAA52D78D76B004E859F /* Preview Assets.xcassets in Resources */,
 				C64DAAA62D78D76B004E859F /* Assets.xcassets in Resources */,
+				C6ECFD412D7DFBAD0000D3E2 /* Launch Screen.storyboard in Resources */,
 				C64DAAA72D78D76B004E859F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
