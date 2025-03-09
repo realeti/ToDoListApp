@@ -10,10 +10,10 @@ import FirebaseCore
 
 @main
 struct ToDoListApp: App {
-    /*init() {
+    init() {
         FirebaseApp.configure()
-    }*/
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    }
+    //@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     var body: some Scene {
         WindowGroup {
@@ -23,11 +23,11 @@ struct ToDoListApp: App {
     }
 }
 
-class AppDelegate: NSObject, UIApplicationDelegate {
+/*class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
 
     return true
   }
-}
+}*/
