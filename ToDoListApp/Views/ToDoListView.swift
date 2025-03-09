@@ -16,6 +16,8 @@ struct ToDoListView: View {
     }
     
     var body: some View {
+        @Bindable var viewModel = viewModel
+        
         NavigationView {
             VStack {
                 
@@ -24,10 +26,14 @@ struct ToDoListView: View {
             .toolbar {
                 Button {
                     // Action
+                    viewModel.showingNewItemView = true
                 } label: {
                     Image(systemName: "plus")
                 }
-
+            }
+            .sheet(isPresented: $viewModel.showingNewItemView) {
+                NewItemView(newItemPresented: $viewModel.showingNewItemView)
+                    .environment(NewItemViewModel())
             }
         }
     }

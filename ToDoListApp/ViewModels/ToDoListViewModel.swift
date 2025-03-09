@@ -11,5 +11,7 @@ import Foundation
 /// Primary tab
 @Observable
 class ToDoListViewModel {
+    var showingNewItemView: Bool = false
+    
     init() {}
 }
