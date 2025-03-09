@@ -26,17 +26,15 @@ struct ToDoListView: View {
         
         NavigationView {
             VStack {
-                List(items) { item in
+                let filteredItems = items.sorted(by: { $0.dueDate < $1.dueDate })
+                List(filteredItems) { item in
                     ToDoListItemView(item: item)
                         .environment(ToDoListItemViewModel())
                         .swipeActions {
-                            Button {
-                                viewModel.delete(id: item.id)
-                            } label: {
-                                Text("Delete")
-                                    .foregroundStyle(.red)
+                            Button("Delete") {
+                                viewModel.delete(id: item.id, userId: userId)
                             }
-
+                            .tint(Color.red)
                         }
                 }
                 .listStyle(PlainListStyle())
