@@ -11,17 +11,19 @@ import FirebaseAuth
 @Observable
 class MainViewModel {
     var currentUserId: String = ""
+    var isSignedIn = false
     private var handler: AuthStateDidChangeListenerHandle?
     
-    init() {
+    func startListening() {
+        guard self.handler == nil else {
+            return
+        }
+        
         self.handler = Auth.auth().addStateDidChangeListener { [weak self] _, user in
             DispatchQueue.main.async {
                 self?.currentUserId = user?.uid ?? ""
+                self?.isSignedIn = user != nil
             }
         }
-    }
-    
-    public var isSignedIn: Bool {
-        return Auth.auth().currentUser != nil
     }
 }

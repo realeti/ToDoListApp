@@ -10,7 +10,10 @@ import FirebaseFirestore
 
 struct ToDoListView: View {
     @Environment(ToDoListViewModel.self) var viewModel
+    @State private var toDoListItemViewModel = ToDoListItemViewModel()
+    @State private var newItemViewModel = NewItemViewModel()
     @FirestoreQuery var items: [ToDoListItem]
+    
     private let userId: String
     
     init(userId: String) {
@@ -29,7 +32,7 @@ struct ToDoListView: View {
                 let filteredItems = items.sorted(by: { $0.dueDate < $1.dueDate })
                 List(filteredItems) { item in
                     ToDoListItemView(item: item)
-                        .environment(ToDoListItemViewModel())
+                        .environment(toDoListItemViewModel)
                         .swipeActions {
                             Button("Delete") {
                                 viewModel.delete(id: item.id, userId: userId)
@@ -49,7 +52,7 @@ struct ToDoListView: View {
             }
             .sheet(isPresented: $viewModel.showingNewItemView) {
                 NewItemView(newItemPresented: $viewModel.showingNewItemView)
-                    .environment(NewItemViewModel())
+                    .environment(newItemViewModel)
             }
         }
     }

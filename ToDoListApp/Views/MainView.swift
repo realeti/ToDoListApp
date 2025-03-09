@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @Environment(MainViewModel.self) var viewModel
+    @State private var toDoListViewModel = ToDoListViewModel()
+    @State private var profileViewModel = ProfileViewModel()
     
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
@@ -24,12 +26,12 @@ struct MainView: View {
         TabView {
             Tab("Home", systemImage: "house") {
                 ToDoListView(userId: viewModel.currentUserId)
-                    .environment(ToDoListViewModel())
+                    .environment(toDoListViewModel)
             }
             
             Tab("Profile", systemImage: "person.circle") {
                 ProfileView()
-                    .environment(ProfileViewModel())
+                    .environment(profileViewModel)
             }
         }
     }
