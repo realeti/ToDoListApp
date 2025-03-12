@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @Environment(LoginViewModel.self) var viewModel
+    @State private var viewModel = LoginViewModel()
     @State private var registerViewModel = RegisterViewModel()
     
     var body: some View {
-        @Bindable var viewModel = viewModel
-        
         NavigationView {
             VStack {
                 // MARK: - Header
@@ -69,5 +67,4 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
-        .environment(LoginViewModel())
 }

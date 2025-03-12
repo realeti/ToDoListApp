@@ -17,7 +17,6 @@ struct MainView: View {
             accountView
         } else {
             LoginView()
-                .environment(LoginViewModel())
         }
     }
     
