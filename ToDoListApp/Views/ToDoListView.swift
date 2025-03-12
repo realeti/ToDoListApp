@@ -10,7 +10,6 @@ import FirebaseFirestore
 
 struct ToDoListView: View {
     @Environment(ToDoListViewModel.self) var viewModel
-    @State private var toDoListItemViewModel = ToDoListItemViewModel()
     @State private var newItemViewModel = NewItemViewModel()
     @FirestoreQuery var items: [ToDoListItem]
     
@@ -32,7 +31,6 @@ struct ToDoListView: View {
                 let filteredItems = items.sorted(by: { $0.dueDate < $1.dueDate })
                 List(filteredItems) { item in
                     ToDoListItemView(item: item)
-                        .environment(toDoListItemViewModel)
                         .swipeActions {
                             Button("Delete") {
                                 viewModel.delete(id: item.id, userId: userId)

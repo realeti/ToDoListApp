@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct ToDoListItemView: View {
-    @Environment(ToDoListItemViewModel.self) var viewModel
+    @State private var viewModel = ToDoListItemViewModel()
     let item: ToDoListItem
     
     var body: some View {
-        @Bindable var viewModel = viewModel
-        
         HStack {
             VStack(alignment: .leading) {
                 Text(item.title)
@@ -47,5 +45,4 @@ struct ToDoListItemView: View {
             isDone: true
         )
     )
-    .environment(ToDoListItemViewModel())
 }
